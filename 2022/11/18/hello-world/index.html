@@ -149,6 +149,31 @@
     
   </li>
   
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="" class="waves-effect waves-light">
+
+      
+      <i class="fas fa-list" style="zoom: 0.6;"></i>
+      
+      <span>Medias</span>
+      <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
+    </a>
+    <ul class="sub-nav menus_item_child ">
+      
+      <li>
+        <a href="/music">
+          
+          <i class="fas fa-music" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>Musics</span>
+        </a>
+      </li>
+      
+    </ul>
+    
+  </li>
+  
   <li>
     <a href="#searchModal" class="modal-trigger waves-effect waves-light">
       <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
@@ -252,6 +277,31 @@
 			
 			友情链接
 		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="javascript:;">
+			
+				<i class="fa-fw fas fa-list"></i>
+			
+			Medias
+			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
+		</a>
+            <ul  style="background:  ;" >
+              
+                <li>
+
+                  <a href="/music " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-music" style="position: absolute;left:50px" ></i>
+			      
+		          <span>Musics</span>
+                  </a>
+                </li>
+              
+            </ul>
           
         </li>
         
@@ -549,18 +599,17 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/11/18/hello-world/">
+                <a href="/2022/11/18/test/">
                     <div class="card-image">
                         
                         
-                        <img src="https://blog-1314120196.cos.ap-nanjing.myqcloud.com/medias/featureimages/4.jpg" class="responsive-img" alt="Hello World">
+                        <img src="https://blog-1314120196.cos.ap-nanjing.myqcloud.com/medias/featureimages/2.jpg" class="responsive-img" alt="测试">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">测试</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -570,9 +619,9 @@
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-11-18
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-11-18
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -581,7 +630,14 @@
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/javaScript/">
+                        <span class="chip bg-color">javaScript</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -777,8 +833,8 @@
     <div class="row">
         <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
                    server="netease"
-                   type="playlist"
-                   id="503838841"
+                   type="song"
+                   id="1491585"
                    fixed='true'
                    autoplay='false'
                    theme='#42b983'
@@ -798,14 +854,14 @@
             
 
                 <div class="container row center-align"
-                    style="margin-bottom: 15px !important;">
+                    style="margin-bottom: 0px !important;">
                     <div class="col s12 m8 l8 copy-right">
                         Copyright&nbsp;&copy;
                         
-                            <span id="year">
-                                2019-2022
-                            </span>
-                            
+                                <span id="year">
+                                    2022
+                                </span>
+                                
                                     <!-- <a href="/about" target="_blank">Yang · Mr</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
@@ -834,61 +890,6 @@
 
                                                                                 <!-- 运行天数提醒. -->
                                                                                 
-                                                                                    <span id="sitetime"> Loading
-                                                                                        ...</span>
-                                                                                    <script>
-                                                                                        var calcSiteTime = function () {
-                                                                                            var seconds = 1000;
-                                                                                            var minutes = seconds * 60;
-                                                                                            var hours = minutes * 60;
-                                                                                            var days = hours * 24;
-                                                                                            var years = days * 365;
-                                                                                            var today = new Date();
-                                                                                            var startYear = "2019";
-                                                                                            var startMonth = "6";
-                                                                                            var startDate = "28";
-                                                                                            var startHour = "0";
-                                                                                            var startMinute = "0";
-                                                                                            var startSecond = "0";
-                                                                                            var todayYear = today.getFullYear();
-                                                                                            var todayMonth = today.getMonth() + 1;
-                                                                                            var todayDate = today.getDate();
-                                                                                            var todayHour = today.getHours();
-                                                                                            var todayMinute = today.getMinutes();
-                                                                                            var todaySecond = today.getSeconds();
-                                                                                            var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
-                                                                                            var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
-                                                                                            var diff = t2 - t1;
-                                                                                            var diffYears = Math.floor(diff / years);
-                                                                                            var diffDays = Math.floor((diff / days) - diffYears * 365);
-
-                                                                                            // 区分是否有年份.
-                                                                                            var language = 'zh-CN';
-                                                                                            if (startYear === String(todayYear)) {
-                                                                                                document.getElementById("year").innerHTML = todayYear;
-                                                                                                var daysTip = 'This site has been running for ' + diffDays + ' days';
-                                                                                                if (language === 'zh-CN') {
-                                                                                                    daysTip = '本站已运行 ' + diffDays + ' 天';
-                                                                                                } else if (language === 'zh-HK') {
-                                                                                                    daysTip = '本站已運行 ' + diffDays + ' 天';
-                                                                                                }
-                                                                                                document.getElementById("sitetime").innerHTML = daysTip;
-                                                                                            } else {
-                                                                                                document.getElementById("year").innerHTML = startYear + " - " + todayYear;
-                                                                                                var yearsAndDaysTip = 'This site has been running for ' + diffYears + ' years and '
-                                                                                                    + diffDays + ' days';
-                                                                                                if (language === 'zh-CN') {
-                                                                                                    yearsAndDaysTip = '本站已运行 ' + diffYears + ' 年 ' + diffDays + ' 天';
-                                                                                                } else if (language === 'zh-HK') {
-                                                                                                    yearsAndDaysTip = '本站已運行 ' + diffYears + ' 年 ' + diffDays + ' 天';
-                                                                                                }
-                                                                                                document.getElementById("sitetime").innerHTML = yearsAndDaysTip;
-                                                                                            }
-                                                                                        }
-
-                                                                                        calcSiteTime();
-                                                                                    </script>
-                                                                                    
                                                                                         <br>
                                                                                         
                     </div>
@@ -1079,6 +1080,14 @@ $(function () {
     
 
     <!-- 雪花特效 -->
+     
+        <script type="text/javascript">
+            // 只在桌面版网页启用特效
+            var windowWidth = $(window).width();
+            if (windowWidth > 768) {
+                document.write('<script type="text/javascript" src="https://blog-1314120196.cos.ap-nanjing.myqcloud.com/libs/others/snow.js"><\/script>');
+            }
+        </script>
     
 
     <!-- 鼠标星星特效 -->
