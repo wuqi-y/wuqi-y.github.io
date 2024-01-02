@@ -231,29 +231,32 @@ if (localStorage.getItem('isDark') === '1') {
 }
 
 function clickTongbuHandel () {
-    const url = "http://43.163.243.129:3000/replace-files"; 
+    const url = "http://43.163.243.129:3000/replace-files";
 
-const data = {
-//   name: "John",
-//   age: 30
-};
+    const data = {
+        //   name: "John",
+        //   age: 30
+    };
 
-const options = {
-  method: "POST",
-  headers: {
-    "Content-Type": "application/json" // 根据实际情况设置请求头
-  },
-  body: JSON.stringify(data)
-};
+    const options = {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json" // 根据实际情况设置请求头
+        },
+        body: JSON.stringify(data)
+    };
 
-fetch(url, options)
-  .then(response => response.json())
-  .then(data => {
-    // 处理响应数据
-    console.log(data);
-  })
-  .catch(error => {
-    // 处理错误
-    console.error(error);
-  });
+    fetch(url, options)
+        .then(response => response.json())
+        .then(data => {
+            // 处理响应数据
+            console.log(data);
+            if (data.code === 200) {
+                location.reload();
+            }
+        })
+        .catch(error => {
+            // 处理错误
+            console.error(error);
+        });
 }
