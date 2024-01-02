@@ -120,7 +120,7 @@ $(function () {
 
     /*回到顶部*/
     $('#backTop').click(function () {
-        $('body,html').animate({scrollTop: 0}, 400);
+        $('body,html').animate({ scrollTop: 0 }, 400);
         return false;
     });
 
@@ -134,8 +134,8 @@ $(function () {
     $('#switch_btn').click(function (e) {
         if (e.currentTarget.innerText === '简' || e.currentTarget.innerText === '簡') {
             $('#switch_btn a').text('繁');
-            localStorage.setItem('language','cn')
-            localStorage.setItem('formLa','hk')
+            localStorage.setItem('language', 'cn')
+            localStorage.setItem('formLa', 'hk')
             //    获取页面上的所有文本节点
             const textNodes = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null, false);
             const converter = OpenCC.Converter({ from: 'hk', to: 'cn' });
@@ -150,19 +150,19 @@ $(function () {
         } else if (e.currentTarget.innerText === '繁') {
             $('#switch_btn a').text('简');
 
-            localStorage.setItem('language','hk')
-            localStorage.setItem('formLa','cn')
+            localStorage.setItem('language', 'hk')
+            localStorage.setItem('formLa', 'cn')
             //    获取页面上的所有文本节点
-           const textNodes = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null, false);
-           const converter = OpenCC.Converter({ from: 'cn', to: 'hk' });
-           // 遍历所有文本节点，并将其中的简体中文转换为繁体字
-           for (let node; (node = textNodes.nextNode());) {
-               const text = node.nodeValue;
-               const convertedText = converter(text)
-               if (text !== convertedText) {
-                   node.nodeValue = convertedText;
-               }
-           }
+            const textNodes = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null, false);
+            const converter = OpenCC.Converter({ from: 'cn', to: 'hk' });
+            // 遍历所有文本节点，并将其中的简体中文转换为繁体字
+            for (let node; (node = textNodes.nextNode());) {
+                const text = node.nodeValue;
+                const convertedText = converter(text)
+                if (text !== convertedText) {
+                    node.nodeValue = convertedText;
+                }
+            }
         }
     });
 
@@ -177,7 +177,7 @@ $(function () {
         showOrHideNavBg(scroll);
     });
 
-    function showOrHideNavBg(position) {
+    function showOrHideNavBg (position) {
         let showPosition = 100;
         if (position < showPosition) {
             $nav.addClass('nav-transparent');
@@ -188,25 +188,25 @@ $(function () {
         }
     }
 
-    	
-	$(".nav-menu>li").hover(function(){
-		$(this).children('ul').stop(true,true).show();
-		 $(this).addClass('nav-show').siblings('li').removeClass('nav-show');
-		
-	},function(){
-		$(this).children('ul').stop(true,true).hide();
-		$('.nav-item.nav-show').removeClass('nav-show');
-	})
-	
-    $('.m-nav-item>a').on('click',function(){
-            if ($(this).next('ul').css('display') == "none") {
-                $('.m-nav-item').children('ul').slideUp(300);
-                $(this).next('ul').slideDown(100);
-                $(this).parent('li').addClass('m-nav-show').siblings('li').removeClass('m-nav-show');
-            }else{
-                $(this).next('ul').slideUp(100);
-                $('.m-nav-item.m-nav-show').removeClass('m-nav-show');
-            }
+
+    $(".nav-menu>li").hover(function () {
+        $(this).children('ul').stop(true, true).show();
+        $(this).addClass('nav-show').siblings('li').removeClass('nav-show');
+
+    }, function () {
+        $(this).children('ul').stop(true, true).hide();
+        $('.nav-item.nav-show').removeClass('nav-show');
+    })
+
+    $('.m-nav-item>a').on('click', function () {
+        if ($(this).next('ul').css('display') == "none") {
+            $('.m-nav-item').children('ul').slideUp(300);
+            $(this).next('ul').slideDown(100);
+            $(this).parent('li').addClass('m-nav-show').siblings('li').removeClass('m-nav-show');
+        } else {
+            $(this).next('ul').slideUp(100);
+            $('.m-nav-item.m-nav-show').removeClass('m-nav-show');
+        }
     });
 
     // 初始化加载 tooltipped.
@@ -228,4 +228,32 @@ if (localStorage.getItem('isDark') === '1') {
 } else {
     document.body.classList.remove('DarkMode');
     $('#sum-moon-icon').removeClass("fa-sun").addClass('fa-moon')
+}
+
+function clickTongbuHandel () {
+    const url = "http://43.163.243.129:3000/replace-files"; 
+
+const data = {
+//   name: "John",
+//   age: 30
+};
+
+const options = {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json" // 根据实际情况设置请求头
+  },
+  body: JSON.stringify(data)
+};
+
+fetch(url, options)
+  .then(response => response.json())
+  .then(data => {
+    // 处理响应数据
+    console.log(data);
+  })
+  .catch(error => {
+    // 处理错误
+    console.error(error);
+  });
 }

@@ -29,6 +29,8 @@ menu:
      - name: 音乐
        url: /music
        icon: fas fa-music
+     - name: 点击同步文章
+       url: javascript:clickTongbuHandel()
     #  - name: 管理后台
     #    url: /admin
     #  - name: Movies
