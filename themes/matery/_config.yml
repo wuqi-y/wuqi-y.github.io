@@ -24,17 +24,17 @@ menu:
     icon: fas fa-address-book
   # 二级菜单写法如下
   Medias:
-   icon: fas fa-list
-   children:
-     - name: 音乐
-       url: /music
-       icon: fas fa-music
-     - name: 点击同步文章
-       url: javascript:clickTongbuHandel()
-    #  - name: 管理后台
-    #    url: /admin
-    #  - name: Movies
-    #    url: /movies
+    icon: fas fa-list
+    children:
+      - name: 音乐
+        url: /music
+        icon: fas fa-music
+      #  - name: 点击同步文章
+      #    url: javascript:clickTongbuHandel()
+      #  - name: 管理后台
+      #    url: /admin
+      #  - name: Movies
+      #    url: /movies
   #      icon: fas fa-film
   #    - name: Books
   #      url: /books
@@ -66,7 +66,7 @@ cover:
   # useConfig 使用方式: 将主题 hexo-theme-matery/source/_data/covers.json 移动到 my-blog/source/_data/下修改配置即可
   video:
     enable: false
-    src: 
+    src:
       - https://txmov2.a.yximgs.com/upic/2021/04/09/22/BMjAyMTA0MDkyMjMwMDhfMTg1ODk2MDg4N180NzUyOTMyMjA4Nl8xXzM=_b_B8e080d7ede19e6674d48a9f12545007b.mp4?pkey=AAVAfNhi5_f-HGkIPXrY5w6nyf4JibwOY-WwdHgSJ2aSoi-2WQLpiYDunLbRZQuESz875eMdsepRlVFtXg9nuQY58uRc-7AsF0kEMNR6QYBj56g9JFFMSGdsoKK2-SV27u8&tag=1-1617978682-xpcwebprofile-0-lcvipceuti-9e40072f87531f1a&clientCacheKey=3xbbtbrfxqpccp4_b.mp4
       - https://txmov2.a.yximgs.com/upic/2021/04/09/21/BMjAyMTA0MDkyMTQyNDRfMTg1ODk2MDg4N180NzUyNjAyMzA0N18xXzM=_b_B83b004b85aba8eca3ded270637616575.mp4
       - https://txmov2.a.yximgs.com/upic/2021/04/09/21/BMjAyMTA0MDkyMTU4MDNfMTg1ODk2MDg4N180NzUyNzE0MzkyNV8xXzM=_b_Bf94cee6bd181efeaca64049bd2e4e276.mp4
@@ -87,40 +87,40 @@ music:
   title: #非吸底模式有效
     enable: true
     show: 听听音乐
-  autoHide: true    # hide automaticaly
-  server: netease   #require	music platform: netease, tencent, kugou, xiami, baidu
-  type: song    #require song, playlist, album, search, artist
-  id: 1491585     #require	song id / playlist id / album id / search keyword
-  fixed: true       # 开启吸底模式
-  autoplay: false   # 是否自动播放
-  theme: '#42b983'
-  loop: 'all'       # 音频循环播放, 可选值: 'all', 'one', 'none'
-  order: 'random'   # 音频循环顺序, 可选值: 'list', 'random'
-  preload: 'auto'   # 预加载，可选值: 'none', 'metadata', 'auto'
-  volume: 0.7       # 默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效
-  listFolded: true  # 列表默认折叠
-  hideLrc: true     # 隐藏歌词
+  autoHide: true # hide automaticaly
+  server: netease #require	music platform: netease, tencent, kugou, xiami, baidu
+  type: song #require song, playlist, album, search, artist
+  id: 1491585 #require	song id / playlist id / album id / search keyword
+  fixed: true # 开启吸底模式
+  autoplay: false # 是否自动播放
+  theme: "#42b983"
+  loop: "all" # 音频循环播放, 可选值: 'all', 'one', 'none'
+  order: "random" # 音频循环顺序, 可选值: 'list', 'random'
+  preload: "auto" # 预加载，可选值: 'none', 'metadata', 'auto'
+  volume: 0.7 # 默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效
+  listFolded: true # 列表默认折叠
+  hideLrc: true # 隐藏歌词
 
 # Whether to display the musics.
 # 单独的音乐页面.
 musics:
   enable: true
-  title:          #非吸底模式有效
+  title: #非吸底模式有效
     enable: true
     show: 听听音乐
-  server: tencent   #require music platform: netease, tencent, kugou, xiami, baidu
-  type: playlist    #require song, playlist, album, search, artist
-  id: 1776127550     #require song id / playlist id / album id / search keyword
-  fixed: false      # 开启吸底模式
-  autoplay: true   # 是否自动播放
-  theme: '#554c60'
-  loop: 'all'       # 音频循环播放, 可选值: 'all', 'one', 'none'
-  order: 'random'   # 音频循环顺序, 可选值: 'list', 'random'
-  preload: 'auto'   # 预加载，可选值: 'none', 'metadata', 'auto'
-  volume: 0.7       # 默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效
-  listFolded: false  # 列表默认折叠
+  server: tencent #require music platform: netease, tencent, kugou, xiami, baidu
+  type: playlist #require song, playlist, album, search, artist
+  id: 1776127550 #require song id / playlist id / album id / search keyword
+  fixed: false # 开启吸底模式
+  autoplay: true # 是否自动播放
+  theme: "#554c60"
+  loop: "all" # 音频循环播放, 可选值: 'all', 'one', 'none'
+  order: "random" # 音频循环顺序, 可选值: 'list', 'random'
+  preload: "auto" # 预加载，可选值: 'none', 'metadata', 'auto'
+  volume: 0.7 # 默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效
+  listFolded: false # 列表默认折叠
   listMaxHeight: "525px" #列表最大高度
-  hideLrc: false     # 隐藏歌词
+  hideLrc: false # 隐藏歌词
 
 # Whether to display the videos.
 # 是否在首页显示视频.
@@ -134,9 +134,9 @@ video:
   thumbnails:
   height: # 如：400
   autoplay: false # 是否自动播放
-  theme: '#42b983'
+  theme: "#42b983"
   loop: false # 是否循环播放
-  preload: 'auto' # 预加载，可选值: 'none', 'metadata', 'auto'
+  preload: "auto" # 预加载，可选值: 'none', 'metadata', 'auto'
   volume: 0.7
 
 # Whether to display the title of the recommended posts
@@ -165,7 +165,7 @@ indexbtn:
 # icon/button will not show up if you leave the corresponding socialLink empty
 # 首页 banner 中的第二行个人信息配置，留空即不启用
 socialLink:
-  github:  https://github.com/wuqi-y/wuqi-y.github.io.git
+  github: https://github.com/wuqi-y/wuqi-y.github.io.git
   email: wuqi_y@163.com
   facebook: # https://www.facebook.com/xxx
   twitter: # https://twitter.com/xxx
@@ -248,9 +248,6 @@ clicklove:
 sakura:
   enable: false
 
-
-  
-
 # 是否激活页面鼠标星星跟随效果, 只在桌面版网页启用特效
 mouseStar:
   enable: false
@@ -273,19 +270,19 @@ myProjects:
   data:
     hexo-theme-matery:
       icon: fas fa-file-alt
-      iconBackground: 'linear-gradient(to bottom right, #66BB6A 0%, #81C784 100%)'
+      iconBackground: "linear-gradient(to bottom right, #66BB6A 0%, #81C784 100%)"
       url: http://github.com/blinkfox/hexo-theme-matery
       desc: This is a Hexo blog theme with 'Material Design' and responsive design.
     Fenix:
-        icon: fas fa-database
-        iconBackground: 'linear-gradient(to bottom right, #F06292 0%, #EF5350 100%)'
-        url: https://github.com/blinkfox/fenix
-        desc: 这是 Spring Data JPA 复杂或动态 SQL 查询的扩展库。
+      icon: fas fa-database
+      iconBackground: "linear-gradient(to bottom right, #F06292 0%, #EF5350 100%)"
+      url: https://github.com/blinkfox/fenix
+      desc: 这是 Spring Data JPA 复杂或动态 SQL 查询的扩展库。
     typora-vue-theme:
-        icon: fas fa-file-alt
-        iconBackground: 'linear-gradient(to bottom right, #29B6F6 0%, #1E88E5 100%)'
-        url: https://github.com/blinkfox/typora-vue-theme
-        desc: This is a typora theme inspired by Vue document style.
+      icon: fas fa-file-alt
+      iconBackground: "linear-gradient(to bottom right, #29B6F6 0%, #1E88E5 100%)"
+      url: https://github.com/blinkfox/typora-vue-theme
+      desc: This is a typora theme inspired by Vue document style.
 
 # config my skills informations in about page.
 # If you don't want to display this `My Skills` content, you can deactivate or delete this configuration.
@@ -294,27 +291,26 @@ mySkills:
   enable: true
   data:
     小程序:
-      background: 'linear-gradient(to right, #FF0066 0%, #FF00CC 100%)'
+      background: "linear-gradient(to right, #FF0066 0%, #FF00CC 100%)"
       percent: 85%
     JavaScript:
-      background: 'linear-gradient(to right, #9900FF 0%, #CC66FF 100%)'
+      background: "linear-gradient(to right, #9900FF 0%, #CC66FF 100%)"
       percent: 80%
     HTML5:
-      background: 'linear-gradient(to right, #2196F3 0%, #42A5F5 100%)'
+      background: "linear-gradient(to right, #2196F3 0%, #42A5F5 100%)"
       percent: 80%
     Vue:
-      background: 'linear-gradient(to right, #3dab7c 0%, #3dab7c 100%)'
+      background: "linear-gradient(to right, #3dab7c 0%, #3dab7c 100%)"
       percent: 85%
     React:
-      background: 'linear-gradient(to right, #2196F3 0%, #42A5F5 100%)'
+      background: "linear-gradient(to right, #2196F3 0%, #42A5F5 100%)"
       percent: 70%
     CSS:
-      background: 'linear-gradient(to right, #00BCD4 0%, #80DEEA 100%)'
+      background: "linear-gradient(to right, #00BCD4 0%, #80DEEA 100%)"
       percent: 70%
     Node:
-      background: 'linear-gradient(to right, #4CAF50 0%, #81C784 100%)'
+      background: "linear-gradient(to right, #4CAF50 0%, #81C784 100%)"
       percent: 70%
-
 
 # config gallery of my photos in about page.
 # If you don't want to display this `Gallery` content, you can deactivate or delete this configuration.
@@ -397,7 +393,7 @@ tcaptcha:
 # Valine 评论模块的配置，默认为不激活，如要使用，就请激活该配置项，并设置 appId 和 appKey.
 valine:
   enable: true
-  appId:  vXzLKapFGe77Gn1LTsXHDl57-gzGzoHsz # 必填
+  appId: vXzLKapFGe77Gn1LTsXHDl57-gzGzoHsz # 必填
   appKey: e2kN33erTThHzIYhJrKsZqMi # 必填
   serverURLs: https://vxzlkapf.lc-cn-n1-shared.com # 必填 https://你的api
   notify: false
@@ -405,9 +401,9 @@ valine:
   visitor: true
   avatar: mm # Gravatar style : mm/identicon/monsterid/wavatar/retro/hide
   pageSize: 10
-  placeholder: '请输入评论内容' # Comment Box placeholder
+  placeholder: "请输入评论内容" # Comment Box placeholder
   background: /medias/comment_bg.png
-  coolpushkey: 
+  coolpushkey:
 
 # The configuration of the Waline comment module is not activated by default.
 # To use it, activate the configuration item.
@@ -418,7 +414,7 @@ waline:
   # Waline 服务端部署参考 https://waline.js.org/guide/server/intro.html 客户端和服务端版本需一致
   # 下面是一个例子，请替换成自己的服务端
   serverURL: https://waline.your-domain.com
-  avatar: 'mp' # Gravatar style : ''/mp/identicon/monsterid/wavatar/retro/hide
+  avatar: "mp" # Gravatar style : ''/mp/identicon/monsterid/wavatar/retro/hide
 
 changyan:
   enable: false
@@ -503,7 +499,7 @@ libs:
     justifiedGallery: /libs/justifiedGallery/justifiedGallery.min.css
   js:
     matery: /js/matery.js
-    jquery: /libs/jquery/jquery-3.6.0.min.js  #3.6.0 20211109
+    jquery: /libs/jquery/jquery-3.6.0.min.js #3.6.0 20211109
     materialize: /libs/materialize/materialize.min.js # 1.0.0
     masonry: /libs/masonry/masonry.pkgd.min.js # v4.0.0
     aos: /libs/aos/aos.js
@@ -545,18 +541,18 @@ libs:
 # The post featured images that needs to be displayed when there is no image.
 # 无文章特色图片时需要显示的文章特色图片.
 featureImages:
-- /medias/featureimages/0.jpg
-- /medias/featureimages/1.jpg
-- /medias/featureimages/2.jpg
-- /medias/featureimages/3.jpg
-- /medias/featureimages/4.jpg
-- /medias/featureimages/5.jpg
-- /medias/featureimages/6.jpg
-- /medias/featureimages/7.jpg
-- /medias/featureimages/8.jpg
-- /medias/featureimages/9.jpg
-- /medias/featureimages/10.jpg
-- /medias/featureimages/11.jpg
+  - /medias/featureimages/0.jpg
+  - /medias/featureimages/1.jpg
+  - /medias/featureimages/2.jpg
+  - /medias/featureimages/3.jpg
+  - /medias/featureimages/4.jpg
+  - /medias/featureimages/5.jpg
+  - /medias/featureimages/6.jpg
+  - /medias/featureimages/7.jpg
+  - /medias/featureimages/8.jpg
+  - /medias/featureimages/9.jpg
+  - /medias/featureimages/10.jpg
+  - /medias/featureimages/11.jpg
 # - /medias/featureimages/12.jpg
 # - /medias/featureimages/13.jpg
 # - /medias/featureimages/14.jpg
@@ -602,7 +598,7 @@ daovoice:
 tidio:
   enable: true
   public_key: 57plfba5dhcalnbmunkfmnlultzalifr
-  
+
 # 是否繁体字
 fontHK:
   show: true
@@ -626,7 +622,7 @@ ribbon:
   size: 150 # 彩带大小, 默认: 90.
   alpha: 0.6 # 彩带透明度 (0 ~ 1), 默认: 0.6.
   zIndex: -1 # 背景的z-index属性，css属性用于控制所在层的位置, 默认: -1.
-  clickChange: false  # 设置是否每次点击都更换彩带.
+  clickChange: false # 设置是否每次点击都更换彩带.
 
 # 背景动态彩带.
 ribbon_dynamic:
@@ -644,7 +640,6 @@ addthis:
   pubid: ra-637b20c809c5b49c # 前往https://www.addthis.com/获取
 #   <!-- Go to www.addthis.com/dashboard to customize your tools -->
 # <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-637b20c809c5b49c"></script>
-
 
 # 打字效果副标题.
 # 如果有符号 ‘ ，请在 ’ 前面加上 \
@@ -679,7 +674,7 @@ icp:
   url: https://beian.miit.gov.cn/#/Integrated/index # 备案链接
   text: 豫ICP备2023004284号 # 备案信息
 
-# CDN访问加速 
+# CDN访问加速
 # 第一次使用本功能，一定要先配置url，再`hexo cl && hexo g && hexo d`部署到GitHub的仓库，注意！必须是GitHub的仓库！
 # 如果必须要使用国内的coding或者gitee，可以采用双部署，同时将网站部署到两个仓库（其中一个必须是GitHub的仓库）
 # URL配置规则（例子如下）： https://cdn.jsdelivr.net/gh/你的GitHub用户名/你的仓库名
@@ -694,7 +689,7 @@ jsDelivr:
   # url:  https://cdn.jsdelivr.net/gh/wuqi-y/wuqi-y.github.io
   # url:  https://jsdelivr.pai233.top/gh/wuqi-y/wuqi-y.github.io
   # url:  https://purge.jsdelivr.net/gh/wuqi-y/wuqi-y.github.io
-  
+
 # 网站背景图
 background:
   enable: false
@@ -726,7 +721,6 @@ bbtime:
   appKey: # 你的appKey
   serverURLs: # https://你的api
 
-
 # 图表绘制插件
 # 建议更换更换hexo-renderer-markdown-it引擎。参考下面链接
 # https://github.com/hexojs/hexo-renderer-markdown-it
@@ -753,7 +747,7 @@ bbtime:
 # {% endmermaid %}
 # mermaid chart。 依赖hexo-tag-mermaid
 mermaid: ## mermaid url https://github.com/knsv/mermaid
-  enable: false  # default false
+  enable: false # default false
   version: "latest" # default v7.1.2
-  options:  # find more api options from https://github.com/knsv/mermaid/blob/master/src/mermaidAPI.js
+  options:# find more api options from https://github.com/knsv/mermaid/blob/master/src/mermaidAPI.js
     #startOnload: true  // default true
