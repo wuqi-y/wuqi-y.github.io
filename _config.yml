@@ -150,7 +150,7 @@ live2d:
 deploy:
   - type: git
     repo:
-      github: https://github.com/wuqi-y/wuqi-y.github.io.git
+      github: git@github.com:wuqi-y/wuqi-y.github.io.git
     branch: master
 # - type: cos-cdn
 #   cloud: tencent
